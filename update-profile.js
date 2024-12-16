@@ -14,6 +14,9 @@ const authenticate = (req, res, next) => {
     });
 };
 
+
+//protected route
+
 app.put('/profile', authenticate, async (req, res) => {
     try {
         const { email, name } = req.body;
